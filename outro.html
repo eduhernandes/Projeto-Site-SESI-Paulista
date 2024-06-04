@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column Span vs. Range</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.item {
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 20px;
+}
+
+.item1 {
+    grid-column: 2 / span 2; /* Começa na coluna 2 e se estende por 2 colunas */
+}
+
+.item2 {
+    grid-column: 2 / 4; /* Começa na coluna 2 e termina na coluna 4 */
+}
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+    </div>
+</body>
+</html>

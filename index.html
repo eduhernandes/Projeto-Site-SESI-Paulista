@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    main{
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+}
+.item2{
+	grid-column: 2;
+    grid-row: 1 / span 2;
+}
+.item3{
+	grid-column: 3;
+    grid-row: 1 / span 2;
+}
+.item4{
+	grid-column: 4;
+    grid-row: 1 / span 2;
+}
+.item5{
+	grid-column: 5;
+    grid-row: 1 / span 2;
+}
+.item6{
+	grid-column: 1;
+    grid-row: 4 / span 2;
+}
+.item7{
+	grid-column: 2;
+    grid-row: 3 / span 2;
+}
+.item8{
+	grid-column: 3;
+    grid-row: 3 / span 2;
+}
+.item9{
+	grid-column: 4/6;
+    grid-row: 3 / span 3;
+}
+.item10{
+	grid-column: 2/4;
+    grid-row: 5 ;
+}
+</style>
+</head>
+<body>
+    <header>
+        Grid Layout
+    </header>
+
+    <main>
+        <h1>SESI Paulitsa</h1>
+        <div class="grid-container">
+            <div class="item1">Primeira Escola de Referência</div>
+            <div class="item2">Nosso diferencial</div>
+            <div class="item3">Conheça o Bilingue</div>  
+            <div class="item4">Bolsas de estudo</div>
+            <div class="item5">Parceria <br>sesi e senai</div>
+            <div class="item6">ENEM</div>
+            <div class="item7">Projetos</div>
+            <div class="item8">Eventos</div>
+            <div class="item9">Primeira Escola de Referência do Paulista</div>
+            <div class="item10">Olimpíada</div>
+        </div>
+    </main>
+    
+
+</body>
+</html>
